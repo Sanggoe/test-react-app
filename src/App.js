@@ -1,43 +1,15 @@
+import TOC from './components/TOC'
+import Content from './components/Content'
+import Subject from './components/Subject'
 import './App.css';
-
-function Subject() {
-  return (
-    <header>
-        <h1>WEB</h1>
-        world wide web!
-    </header>
-  );
-}
-
-function TOC() {
-  return (
-    <nav>
-        <ul>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JS</a></li>
-        </ul>
-    </nav>
-  );
-}
-
-
-function Content() {
-  return (
-    <article>
-        <h2>HTML</h2>
-        HTML is HyperText Markup Language.
-    </article>
-  );
-}
-
 
 function App() {
   return (
     <div className="App">
-      <Subject></Subject>
+      <Subject title="Web" sub="world wide web!"></Subject>
+      <Subject title="React" sub="For UI"></Subject>
       <TOC></TOC>
-      <Content></Content>
+      <Content title="HTML" desc="HTML is HyperText Markup Language."></Content>
     </div>
   );
 }
